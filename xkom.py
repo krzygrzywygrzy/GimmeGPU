@@ -95,32 +95,32 @@ try:
     # imie
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[1]/label/input'). \
-        send_keys("Paweł Przetacznik")
+        send_keys("")
 
     # adres
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[2]/label/input').send_keys(
-        "Chodorowa 22a")
+        "")
 
     # kod pocztowy
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[3]/label/input').send_keys(
-        "33-325")
+        "")
 
     # poczta
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[4]/label/input').send_keys(
-        "Krużlowa Wyżna")
+        "")
 
     # email
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[5]/label/input').send_keys(
-        "przetacznikp@gmail.com")
+        "")
 
     # nr tel
     driver.find_element_by_xpath(
         '/html/body/div[1]/div/div[2]/form/div/div[1]/section[1]/div/div[6]/label/input').send_keys(
-        "883009224")
+        "")
 
     checkbox = WebDriverWait(driver, 3).until(EC.presence_of_element_located(
         (By.XPATH, '//*[@id="app"]/div/div[2]/form/div/div[1]/div[4]/div/div[2]/div[1]/label')))
